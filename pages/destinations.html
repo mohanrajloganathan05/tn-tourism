@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/destinations.css">
+    
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the current page filename (e.g., "index.html")
+        let currentPage = window.location.pathname.split("/").pop();
+
+        // Get all navigation links
+        let navLinks = document.querySelectorAll(".nav-link");
+
+        // Loop through all links
+        navLinks.forEach(link => {
+            // If the href matches the current page, add 'active' class
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
+<body>
+    <nav>
+        <h2>Tamil Nadu <span>Tourism</span></h2>
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+            <li><a href="travel-tips.html" class="nav-link">Travel Tips</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <div class="container">
+            <div class="card">
+                <img src="../images/chennai.jpg" alt="Chennai">
+                <h2>Chennai</h2>
+                <p>Marina Beach, historic temples, and vibrant culture.</p>
+            </div>
+            <div class="card">
+                <img src="../images/madurai.jpg" alt="Madurai">
+                <h2>Madurai</h2>
+                <p>Famous for Meenakshi Temple and ancient heritage.</p>
+            </div>
+            <div class="card">
+                <img src="../images/ooty.jpg" alt="Ooty">
+                <h2>Ooty</h2>
+                <p>Scenic hill station with tea gardens and lakes.</p>
+            </div>
+            <div class="card">
+                <img src="../images/kanyakumari.jpg" alt="Kanyakumari">
+                <h2>Kanyakumari</h2>
+                <p>Sunrise and sunset views at the southern tip of India.</p>
+            </div>
+            <div class="card">
+                <img src="../images/coimbatore.jpeg" alt="Coimbatore">
+                <h2>Coimbatore</h2>
+                <p>Industrial city with serene temples and waterfalls.</p>
+            </div>
+            <div class="card">
+                <img src="../images/thanjavur.webp" alt="Thanjavur">
+                <h2>Thanjavur</h2>
+                <p>Home to the majestic Brihadeeswarar Temple.</p>
+            </div>
+            <div class="card">
+                <img src="../images/rameswaram.jpg" alt="Rameswaram">
+                <h2>Rameswaram</h2>
+                <p>Spiritual city known for Ramanathaswamy Temple.</p>
+            </div>
+            <div class="card">
+                <img src="../images/yercaud.jpg" alt="Yercaud">
+                <h2>Yercaud</h2>
+                <p>A peaceful hill station with coffee plantations.</p>
+            </div>
+            <div class="card">
+                <img src="../images/kodaikanal.jpg" alt="Kodaikanal">
+                <h2>Kodaikanal</h2>
+                <p>Famous for misty hills and beautiful lakes.</p>
+            </div>
+            <div class="card ">
+                <img src="../images/vellore.jpg" alt="Vellore">
+                <h2>Vellore</h2>
+                <p>Renowned for its golden temple and historic fort.</p>
+            </div>
+            <div class="card">
+                <img src="../images/mahabs.jpg" alt="Mahabalipuram">
+                <h2>Mahabalipuram</h2>
+                <p>UNESCO heritage site with rock-cut temples.</p>
+            </div>
+            <div class="card">
+                <img src="../images/tirunelveli.jpg" alt="Tirunelveli">
+                <h2>Tirunelveli</h2>
+                <p>Famous for Halwa and natural waterfalls.</p>
+            </div>
+            <div class="card">
+                <img src="../images/dhanushkodi.jpg" alt="Dhanushkodi">
+                <h2>Dhanushkodi</h2>
+                <p>Ghost town with stunning beaches and history.</p>
+            </div>
+            <div class="card">
+                <img src="../images/mudhumalai.webp" alt="Mudumalai">
+                <h2>Mudumalai</h2>
+                <p>Wildlife sanctuary with rich biodiversity.</p>
+            </div>
+            <div class="card">
+                <img src="../images/kumbakonam.jpg" alt="Kumbakonam">
+                <h2>Kumbakonam</h2>
+                <p>City of temples and traditional filter coffee.</p>
+            </div>
+           
+        </div>
+    </div>
+   
+     <footer>
+        <div class="desc">
+            <h4><span>TamilNadu </span>  Tourism</h4>
+            <p>Discover the beauty, culture, and heritage of Tamil Nadu. From ancient temples to pristine beaches, experience the best of South India.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/tntourismoffcl/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/tntourismoffcl/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/tntourismoffcl?lang=en" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@TamilnaduTourismOnline" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+        </div>
+        <div class="explore-links">
+            <h4>Explore</h4>
+            <ul>
+                <li>Temples</li>
+                <li>Beaches</li>
+                <li>Hill Stations</li>
+                <li>Heritage Sites</li>
+                <li>Wildlife</li>
+            </ul>
+        </div>
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="travel-tips.html">travel Tips</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="contact-us">
+            <h4>Contact Us</h4>
+            <i class="fas fa-map-marker-alt"></i><p>Tamil Nadu Tourism Development Corporation, Chennai, India</p>
+            <i class="fas fa-envelope"></i><p>contact@tnexplorer.example.com</p>
+            <i class="fas fa-phone"></i><p> +123 456 7890</p></div>
+        </div>
+    
+      </footer>
+
+
+        
+    </body>
+    
+    

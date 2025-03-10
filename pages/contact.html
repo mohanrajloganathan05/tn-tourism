@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+    <title>Document</title>
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the current page filename (e.g., "index.html")
+        let currentPage = window.location.pathname.split("/").pop();
+
+        // Get all navigation links
+        let navLinks = document.querySelectorAll(".nav-link");
+
+        // Loop through all links
+        navLinks.forEach(link => {
+            // If the href matches the current page, add 'active' class
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
+
+<body>
+    <nav>
+        <h2>Tamil Nadu <span>Tourism</span></h2>
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+            <li><a href="travel-tips.html" class="nav-link">Travel Tips</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+       <h1>Contact Us</h1>
+       <p>Have questions about your trip to Tamil Nadu? We're here to help!</p>
+    </div>
+    <div class="form-box">
+        <h4>Send us a message</h4>
+        <form action="">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="trip-plan">Trip Planning</option>
+                <option value="Feedback">Feedback</option>
+                <option value="partnership">Partnership</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="desc">
+            <h4><span>TamilNadu </span>  Tourism</h4>
+            <p>Discover the beauty, culture, and heritage of Tamil Nadu. From ancient temples to pristine beaches, experience the best of South India.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/tntourismoffcl/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/tntourismoffcl/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/tntourismoffcl?lang=en" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@TamilnaduTourismOnline" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+        </div>
+        <div class="explore-links">
+            <h4>Explore</h4>
+            <ul>
+                <li>Temples</li>
+                <li>Beaches</li>
+                <li>Hill Stations</li>
+                <li>Heritage Sites</li>
+                <li>Wildlife</li>
+            </ul>
+        </div>
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="travel-tips.html">travel Tips</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="contact-us">
+            <h4>Contact Us</h4>
+            <i class="fas fa-map-marker-alt"></i><p>Tamil Nadu Tourism Development Corporation, Chennai, India</p>
+            <i class="fas fa-envelope"></i><p>contact@tnexplorer.example.com</p>
+            <i class="fas fa-phone"></i><p> +123 456 7890</p></div>
+        </div>
+    
+    </footer>
+    </html>
+    
+</body>
+</html>

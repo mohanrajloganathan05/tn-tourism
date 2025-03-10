@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/travel-tips.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the current page filename (e.g., "index.html")
+        let currentPage = window.location.pathname.split("/").pop();
+
+        // Get all navigation links
+        let navLinks = document.querySelectorAll(".nav-link");
+
+        // Loop through all links
+        navLinks.forEach(link => {
+            // If the href matches the current page, add 'active' class
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
+<body>
+    <nav>
+        <h2>Tamil Nadu <span>Tourism</span></h2>
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+            <li><a href="travel-tips.html" class="nav-link">Travel Tips</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Travel Tips & Information</h1><br>
+        <p>Everything you need to know to make your journey through Tamil Nadu smooth and enjoyable.</p>
+    </div>
+
+    <div class="tips-container">
+        <div class="tips-box">
+            <h5>Best Time to Visit</h5>
+            <p>The best time to visit Tamil Nadu is between October and March when the weather is cooler and more pleasant. Summer (April to June) can be extremely hot, especially in inland areas.</p>
+        </div>
+        <div class="tips-box">
+            <h5>Getting Around</h5>
+            <p>Tamil Nadu has excellent public transportation options including buses, trains, and auto-rickshaws. For remote areas, consider hiring a private car with a driver. Major cities like Chennai have metro rail services.</p>
+        </div>
+        <div class="tips-box">
+            <h5>Local Cuisine</h5>
+            <p>Tamil cuisine is known for its use of rice, lentils, and spices. Don't miss trying traditional dishes like Dosa, Idli, Sambar, Pongal, and the famous "meals" served on banana leaves. Street food is delicious but choose vendors with good hygiene practices.</p>
+        </div>
+        <div class="tips-box">
+            <h5>Cultural Etiquette</h5>
+            <p>When visiting temples, dress modestly with shoulders and knees covered. Remove shoes before entering. Taking photos inside temples may be restricted in some areas. It's customary to eat with your right hand if dining traditionally.</p>
+        </div> 
+        <div class="tips-box">
+            <h5>Festivals Worth Experiencing</h5>
+            <p>Pongal (mid-January), Tamil New Year (April), Madurai Chithirai Festival (April-May), and Dance Festival at Mamallapuram (December-January) are major cultural celebrations that showcase Tamil traditions, music, and dance.</p>
+        </div> 
+        <div class="tips-box">
+            <h5>Shopping Guide</h5>
+            <p>Tamil Nadu is famous for silk sarees (especially from Kanchipuram), bronze statues, Tanjore paintings, wood carvings, and handloom textiles. Government emporiums like Poompuhar and Co-optex offer authentic items at fixed prices.</p>
+        </div> 
+    </div>
+
+    <div class="climate">
+        <h1>Weather & Climate</h1><br>
+        <div class="weather-container">
+            <div class="weather-box">
+                <h6 class="season" >Winter (Nov-Feb)</h6>
+                <h2 class="temp" id="winter">22°C - 30°C</h2>
+                <p class="temp-desc">Pleasant and mild temperatures, ideal for sightseeing and outdoor activities.</p>
+            </div>
+            <div class="weather-box">
+                <h6 class="season" >Summer (Mar-Jun)</h6>
+                <h2 class="temp" id="summer">30°C - 40°C</h2>
+                <p  class="temp-desc">Hot and dry, hill stations like Yercaud, Ooty and Kodaikanal offer relief from the heat.</p>
+            </div>
+            <div class="weather-box">
+                <h6 class="season">Monsoon (Jul-Sep)</h6>
+                <h2 class="temp" id="monsoon">25°C - 35°C</h2>
+                <p  class="temp-desc">North-east monsoon brings moderate rainfall, creating lush greenery.</p>
+            </div>
+            <div class="weather-box">
+                <h6 class="season">Post-Monsoon (Oct)</h6>
+                <h2 class="temp" id="post-monsoon">25°C - 32°C</h2>
+                <p  class="temp-desc">Occasional heavy rains due to retreating north-east monsoon.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="essential-info">
+        <h2>Essential Information</h2>
+        <div class="info-container">
+            <div class="info-box">
+                <h6>Languages</h6>
+                <p>Tamil is the official language of Tamil Nadu. English is widely understood in urban areas and tourist destinations. Learning a few basic Tamil phrases can enhance your experience.</p>
+                <div class="words">
+                    <p><span><b>Hello:</b></span> Vanakkam</p>
+                    <p><span><b>Thank you:</b></span> Nandri</p>
+                    <p><span><b>How are you?:</b></span> Eppadi irukeenga?</p>
+                    
+                </div>
+            </div>
+            <div class="info-box">
+                <h6>Currency & Payments</h6>
+                <p>The Indian Rupee (₹) is the currency. ATMs are readily available in cities and tourist areas. Credit cards are accepted at major establishments, but carry cash for smaller vendors and rural areas. <br><br>Mobile payment options like Google Pay, PhonePe, and Paytm are widely used in urban centers.</p>
+            </div>
+            <div class="info-box">
+                <h6>Connectivity</h6>
+                <p>Mobile coverage is generally good across Tamil Nadu. Major providers include Airtel, Jio, and Vi. Tourist SIM cards are available at airports with valid ID and passport-sized photos. <br><br>Most hotels, restaurants, and cafes offer free Wi-Fi, though speeds may vary in rural areas.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<footer>
+    <div class="desc">
+        <h4><span>TamilNadu </span>  Tourism</h4>
+        <p>Discover the beauty, culture, and heritage of Tamil Nadu. From ancient temples to pristine beaches, experience the best of South India.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/tntourismoffcl/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/tntourismoffcl/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/tntourismoffcl?lang=en" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@TamilnaduTourismOnline" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+    </div>
+    <div class="explore-links">
+        <h4>Explore</h4>
+        <ul>
+            <li>Temples</li>
+            <li>Beaches</li>
+            <li>Hill Stations</li>
+            <li>Heritage Sites</li>
+            <li>Wildlife</li>
+        </ul>
+    </div>
+    <div class="quick-links">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="travel-tips.html">travel Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="contact-us">
+        <h4>Contact Us</h4>
+        <i class="fas fa-map-marker-alt"></i><p>Tamil Nadu Tourism Development Corporation, Chennai, India</p>
+        <i class="fas fa-envelope"></i><p>contact@tnexplorer.example.com</p>
+        <i class="fas fa-phone"></i><p> +123 456 7890</p></div>
+    </div>
+
+</footer>
+</html>
